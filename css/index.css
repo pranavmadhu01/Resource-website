@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +18,7 @@ body{
     align-items: center;
 }
 .header-site{
+    z-index: 9999;
     position: fixed;
     width: 100%;
     height: 100px;
@@ -40,19 +40,19 @@ body{
     list-style: none;
     display: flex;
     margin-top: 5px;
-
 }
 .header-site li a{
     text-decoration: none;
     margin: 60px;
     color: #07becc;
     font-weight: bolder;
-    transition: all 0.4s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 .header-site li a:hover{
     color: #4d4d4d;
 }
 .body-container{
+    padding-top: 2.6cm;
     width: 900px;
     height: 600px;
     margin-top: 2.6cm;
@@ -60,20 +60,54 @@ body{
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     gap :4px;
+    animation: animation1;
+    animation-duration: 3s;
+
+    
+}
+@keyframes animation1 {
+    from{
+        transform:perspective(50em) rotateY(40deg);
         
+    }
 }
 .body-container > div{
     background-repeat: no-repeat;
-    border-radius: 40px;
+    border-radius: 20px;
     background-color:#4d4d4d;
+    transition: all 0.5s ease 0s;
 }
 .git{
+    position: relative;
     background-image: url(../res/git\ and\ github.jpg);
     background-size: 300px 300px;
     background-size: cover;
     background-position: center;
     border-bottom:0.02cm solid #4d4d4d ;
     border-right: 0.02cm solid #4d4d4d;
+    animation: animation2;
+    animation-duration: 1s;
+}
+.git::after{
+    position: absolute;
+    background-color:rgba(231, 250, 255);
+    width:300px ;
+    height: 249px;
+    border-radius:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: center;
+    content: " ";
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.git:hover::after{
+    content: "Git and Github";
+    background-color:rgba(231, 250, 255,0.75);
+    opacity: 1;
 }
 .web{
     background-image: url(../res/Web_Programmer_01_generated.jpg);
@@ -83,7 +117,31 @@ body{
     border-left: 0.02cm solid #4d4d4d;
     border-bottom:0.02cm solid #4d4d4d;
     border-right: 0.02cm solid #4d4d4d;
+    animation: animation2;
+    animation-duration: 1s;
 }
+.web::after{
+    position: absolute;
+    background-color:rgba(231, 250, 255);
+    width:300px ;
+    height: 249px;
+    border-radius:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: center;
+    content: " ";
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.web:hover::after{
+    content: "Web Development";
+    background-color:rgba(231, 250, 255,0.75);
+    opacity: 1;
+}
+
 .ai{
     background-image: url(../res/Artificial\ Intelligence.jpg);
     background-size: 300px 300px;
@@ -91,6 +149,29 @@ body{
     background-position: center;
     border-left: 0.02cm solid #4d4d4d;
     border-bottom:0.02cm solid #4d4d4d;
+    animation: animation2;
+    animation-duration: 1s;
+}
+.ai::after{
+    position: absolute;
+    background-color:rgba(231, 250, 255);
+    width:300px ;
+    height: 249px;
+    border-radius:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: center;
+    content: " ";
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.ai:hover::after{
+    content: "AI and ML";
+    background-color:rgba(231, 250, 255,0.75);
+    opacity: 1;
 }
 .gate{
     background-image: url(../res/);
@@ -99,6 +180,29 @@ body{
     background-position: center;
     border-top:0.02cm solid #4d4d4d ;
     border-right: 0.02cm solid #4d4d4d;
+    animation: animation2;
+    animation-duration: 1s;
+}
+.gate::after{
+    position: absolute;
+    background-color:rgba(231, 250, 255);
+    width:300px ;
+    height: 249px;
+    border-radius:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: center;
+    content: " ";
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.gate:hover::after{
+    content: "Gate";
+    background-color:rgba(231, 250, 255,0.75);
+    opacity: 1;
 }
 .python{
     background-image: url(../res/programing\ languages.jpg);
@@ -108,6 +212,29 @@ body{
     border-top:0.02cm solid #4d4d4d ;
     border-right: 0.02cm solid #4d4d4d;
     border-left:0.02cm solid #4d4d4d ;
+    animation: animation2;
+    animation-duration: 1s;
+}
+.python::after{
+    position: absolute;
+    background-color:rgba(231, 250, 255);
+    width:300px ;
+    height: 249px;
+    border-radius:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: center;
+    content: " ";
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.python:hover::after{
+    content: "Other Langs";
+    background-color:rgba(231, 250, 255,0.75);
+    opacity: 1;
 }
 .mobile-app{
     background-image: url(../res/android\ appp\ dev.jpg);
@@ -116,13 +243,41 @@ body{
     background-position: center;
     border-top:0.02cm solid #4d4d4d;
     border-left:0.02cm solid #4d4d4d;
+    animation: animation2;
+    animation-duration: 1s;
+}
+.mobile-app::after{
+    position: absolute;
+    background-color:rgba(231, 250, 255);
+    width:300px ;
+    height: 249px;
+    border-radius:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: center;
+    content: " ";
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.mobile-app:hover::after{
+    content: "Android Dev";
+    background-color:rgba(231, 250, 255,0.75);
+    opacity: 1;
+}
+@keyframes animation2 {
+    from{
+        transform: rotate(-20deg);
+    }
 }
 .body-container > div:hover{
     cursor: pointer;
-    /* box-shadow: -2px 2px 2px 2px black; */
     -moz-box-shadow: 0 0 10px black;
     -webkit-box-shadow: 0 0 10px black;
     box-shadow: 0 0 10px black;
+    transform: scale(1.03);
 }
 .footer{
     width: 100%;
@@ -139,19 +294,26 @@ body{
 }
     
 .info-container{
+    background-color: rgba(231, 250, 255,0.8);
     padding-top: 40px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     text-align: center;
+    
 
 }
 .info-container img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     object-position: center;
     border: 0.1cm solid #4d4d4d;
     border-radius: 40%;
+    transition: all 1s ease-in-out 0s ;
+    
+}
+.info-container img:hover{
+    transform:rotate(25deg);
 }
 .info-container div{
     display: flex;
