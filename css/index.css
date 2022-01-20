@@ -28,7 +28,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}.header-site h1{
+}
+.header-site h1{
     margin-left: 10px;
     color: #a5cc57;
     font-size: 70px;
@@ -71,10 +72,12 @@ body{
         
     }
 }
-.body-container > div{
+.body-container a{
     background-repeat: no-repeat;
     border-radius: 20px;
     background-color:#4d4d4d;
+    text-decoration: none;
+    color: #000;
     transition: all 0.5s ease 0s;
 }
 .git{
@@ -102,12 +105,15 @@ body{
     text-align: center;
     content: " ";
     opacity: 0;
+    transform: rotate(-20deg) scale(0.5);
+    
     transition: all 0.5s ease 0s;
 }
 .git:hover::after{
     content: "Git and Github";
     background-color:rgba(231, 250, 255,0.75);
     opacity: 1;
+    transform: rotate(0deg);
 }
 .web{
     background-image: url(../res/Web_Programmer_01_generated.jpg);
@@ -134,12 +140,14 @@ body{
     text-align: center;
     content: " ";
     opacity: 0;
+    transform: rotate(20deg) scale(0.5);
     transition: all 0.5s ease 0s;
 }
 .web:hover::after{
     content: "Web Development";
     background-color:rgba(231, 250, 255,0.75);
     opacity: 1;
+    transform: rotate(0deg);
 }
 
 .ai{
@@ -166,12 +174,14 @@ body{
     text-align: center;
     content: " ";
     opacity: 0;
+    transform: rotate(-20deg) scale(0.5);
     transition: all 0.5s ease 0s;
 }
 .ai:hover::after{
     content: "AI and ML";
     background-color:rgba(231, 250, 255,0.75);
     opacity: 1;
+    transform: rotate(0deg);
 }
 .gate{
     background-image: url(../res/);
@@ -197,12 +207,14 @@ body{
     text-align: center;
     content: " ";
     opacity: 0;
+    transform: rotate(20deg) scale(0.5);
     transition: all 0.5s ease 0s;
 }
 .gate:hover::after{
     content: "Gate";
     background-color:rgba(231, 250, 255,0.75);
     opacity: 1;
+    transform: rotate(0deg);
 }
 .python{
     background-image: url(../res/programing\ languages.jpg);
@@ -229,12 +241,14 @@ body{
     text-align: center;
     content: " ";
     opacity: 0;
+    transform: rotate(-20deg) scale(0.5);
     transition: all 0.5s ease 0s;
 }
 .python:hover::after{
     content: "Other Langs";
     background-color:rgba(231, 250, 255,0.75);
     opacity: 1;
+    transform: rotate(0deg);
 }
 .mobile-app{
     background-image: url(../res/android\ appp\ dev.jpg);
@@ -260,12 +274,14 @@ body{
     text-align: center;
     content: " ";
     opacity: 0;
+    transform: rotate(20deg) scale(0.5);
     transition: all 0.5s ease 0s;
 }
 .mobile-app:hover::after{
     content: "Android Dev";
     background-color:rgba(231, 250, 255,0.75);
     opacity: 1;
+    transform: rotate(0deg);
 }
 @keyframes animation2 {
     from{
@@ -309,11 +325,11 @@ body{
     object-position: center;
     border: 0.1cm solid #4d4d4d;
     border-radius: 40%;
-    transition: all 1s ease-in-out 0s ;
+    transition: all 0.3s ease-in-out 0s ;
     
 }
 .info-container img:hover{
-    transform:rotate(25deg);
+    transform:rotate(20deg);
 }
 .info-container div{
     display: flex;

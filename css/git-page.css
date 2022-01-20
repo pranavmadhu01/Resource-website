@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(../res/tecnologia.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-site{
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: rgba(231, 250, 255,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-site h1{
+    margin-left: 10px;
+    color: #a5cc57;
+    font-size: 70px;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    text-shadow: -5px -1px 0 #000, 0px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    cursor: auto;
+}
