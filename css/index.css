@@ -184,8 +184,7 @@ body{
     transform: rotate(0deg);
 }
 .gate{
-    background-image: url(../res/);
-    background-size: 300px 300px;
+    background-image: url(../res/gate.jpg);
     background-size: cover;
     background-position: center;
     border-top:0.02cm solid #4d4d4d ;
