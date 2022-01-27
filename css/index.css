@@ -96,7 +96,7 @@ body{
     background-color:rgba(231, 250, 255);
     width:300px ;
     height: 249px;
-    border-radius:40px;
+    border-radius:20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +131,7 @@ body{
     background-color:rgba(231, 250, 255);
     width:300px ;
     height: 249px;
-    border-radius:40px;
+    border-radius:20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,7 +165,7 @@ body{
     background-color:rgba(231, 250, 255);
     width:300px ;
     height: 249px;
-    border-radius:40px;
+    border-radius:20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,7 +198,7 @@ body{
     background-color:rgba(231, 250, 255);
     width:300px ;
     height: 249px;
-    border-radius:40px;
+    border-radius:20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,7 +232,7 @@ body{
     background-color:rgba(231, 250, 255);
     width:300px ;
     height: 249px;
-    border-radius:40px;
+    border-radius:20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,7 +265,7 @@ body{
     background-color:rgba(231, 250, 255);
     width:300px ;
     height: 249px;
-    border-radius:40px;
+    border-radius:20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,6 +310,7 @@ body{
 }
     
 .info-container{
+    padding: 10em 0em;
     background-color: rgba(231, 250, 255,0.8);
     padding-top: 40px;
     display: grid;
@@ -337,6 +338,22 @@ body{
     align-items: center;
     font-family: 'Libre Barcode 128 Text', cursive;
 }
+::-webkit-scrollbar{
+    width: 0.5cm;
+    background: transparent;
+}
+::-webkit-scrollbar-track{
+    background-color: #a5cc57;
+    border-radius: 20px;
+    margin: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #07becc;
+    border-radius: 20px;
+    height: 100px;
+}
+
+
 
 
 
