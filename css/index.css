@@ -360,6 +360,11 @@ body {
 
 
 .animated-footer{
+  /* background-image: url(../res/footer-background.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
   display: none;
   position: relative;
   width: 100%;
@@ -371,25 +376,41 @@ body {
   width: 400%;
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   animation: footeranimation 10s infinite alternate;
   animation-play-state: running;
 }
 
 @keyframes footeranimation {
+  
   33.33%{transform: translateX(-25%);}
   66.66%{transform: translatex(-50%);}
   100%{transform: translateX(-75%);}
 
   
 }
+.footer-animation-container div{
+  width: 200px;
+  height: auto;
+  padding:30px;
+  color: #07becc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border: 0.02cm solid #07becc;
+  box-shadow: 4px 8px 20px  #07becc inset;
+  border-radius: 30px;
+  gap: 10px;
+}
 .footer-animation-container div img{
   width: 200px;
   height: 200px;
   object-fit: cover;
   object-position: center;
-  border: 0.1cm solid #4d4d4d;
+  /* border: 0.1cm solid #4d4d4d; */
   border-radius: 40%;
   
 }

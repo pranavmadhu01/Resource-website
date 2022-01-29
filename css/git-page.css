@@ -51,12 +51,13 @@ body{
 :is(.fa-home,.fa-users,.fa-id-badge){
     margin-right: 5px;
   
-  }
+}
 .video-container{
-    width: 95%;
-    margin-top: 2.6cm;
-    margin: 2.6cm 50px;
+    width: 100%;
+    padding-top: 2.6cm;
+    padding-left:50px;
     display: flex;
+    align-items: center;
     gap: 2px;
 }
 .youtube{
@@ -107,3 +108,113 @@ body{
     border-radius: 20px;
     height: 100px;
 }
+
+
+
+@media all and (max-width:1200px){
+    .header-site h1{
+        font-size: 65px;
+    }
+    .header-site li a{
+        margin: 40px;
+        font-size: 15px;
+    }
+    .youtube{
+        width: 800px;
+        height: 500px;
+    }
+    .documentation{
+        width: 800px;
+        height: 600px;
+    }
+}
+@media all and (max-width:1000px){
+    .header-site h1{
+      font-size: 60px;
+    }
+    .header-site li a{
+      margin: 30px;
+    }
+    .youtube{
+        width: 700px;
+        height: 400px;
+    }
+    .documentation{
+        width: 700px;
+        height: 550px;
+    }
+}
+@media all and (max-width:850px){
+    .header-site h1{
+      font-size: 45px;
+    }
+    .header-site  a{
+      font-size: 13px;
+      font-weight: bolder;
+      background-color: aliceblue;
+      border-radius: 10px;
+      border: 0.1cm solid #a5cc57;
+      padding: 3px;
+    }
+    .video-container{
+        padding-left:0px;
+        justify-content: center;
+    }
+    .youtube{
+        margin-left: 0;
+        width: 600px;
+        height: 400px;
+    }
+    .readable{
+        width: 100%;
+        padding-top: 2.6cm;
+        padding-bottom: 20px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .documentation{
+        width: 600px;
+        height: 550px;
+    }
+}
+@media all and (max-width:650px){
+    .header-site{
+        height: fit-content;
+    }
+    .header-site h1{
+        font-size: 40px;
+    }
+    .header-site li a{
+        font-size: 15px;
+    }
+    .youtube{
+        margin-left: 0;
+        width: 400px;
+        height: 250px;
+    }
+    .documentation{
+        width: 350px;
+        height: 550px;
+    }
+    ::-webkit-scrollbar{
+        width: 0.5em;
+    }
+}
+@media all and (max-width:400px){
+    .header-site{
+        flex-direction: column;
+        height: min-content;
+    }
+    .video-container{
+        padding-top:120px;
+        justify-content: center;
+    }
+    .youtube{
+        margin-left: 0;
+        width: 350px;
+        height: 200px;
+    }
+}
+
