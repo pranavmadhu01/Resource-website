@@ -48,6 +48,10 @@ body{
 .header-site a:hover{
     color: #4d4d4d;
 }
+:is(.fa-home,.fa-users,.fa-id-badge){
+    margin-right: 5px;
+  
+  }
 .video-container{
     width: 95%;
     margin-top: 2.6cm;

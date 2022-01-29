@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/web-dev.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7838252b65.js" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
-<body>
-    <div class="main-container">
-        <header class="header-site">
-            <h1>Web Development</h1>
-            <a href="index.html"><i class="fas fa-home"></i>Home</a>
-        </header>
-        <div class="video-container">
-            <fieldset class="frontend-fieldset">
-                <legend>Frontend Development</legend>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?&amp;mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/yfoY53QXEnI?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/w7ejDZ8SWv8?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </fieldset>
-        <div>
-            <fieldset class="frontend-documentation">
+    <head>
+        <link rel="stylesheet" href="css/web-dev.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/7838252b65.js" crossorigin="anonymous"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <header class="header-site">
+                <h1>Web Development</h1>
+                    <a href="index.html"><i class="fas fa-home"></i>Home</a>
+            </header>
+            <div class="video-container">
+                <fieldset class="frontend-fieldset">
+                    <legend>Frontend Development</legend>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yfoY53QXEnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/w7ejDZ8SWv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </fieldset>
+            </div>
+            <fieldset class="frontend-documentation-container">
                 <legend>Frontend Documentation</legend>
-                <fieldset>
+                <span><a href="#bottom"><i class="fas fa-angle-double-down"></i></a></span>
+                <fieldset class="frontend-documentation-elements">
                     <legend>Html</legend>
-                    <iframe src="https://devdocs.io/css/" frameborder="0"></iframe>
+                    <iframe src="https://devdocs.io/html/" frameborder="0" id="html"></iframe>
                 </fieldset>
-                <fieldset>
+                <fieldset class="frontend-documentation-elements">
                     <legend>Css</legend>
-                    <iframe src="https://devdocs.io/css/" frameborder="0"></iframe>
+                    <iframe src="https://devdocs.io/css/" frameborder="0" id="css"></iframe>
                 </fieldset>
-                <fieldset>
+                <fieldset class="frontend-documentation-elements">
                     <legend>JS</legend>
-                    <iframe src="https://devdocs.io/css/" frameborder="0"></iframe>
+                    <iframe src="https://devdocs.io/javascript/" frameborder="0"></iframe>
                 </fieldset>
-                <fieldset>
+                <fieldset class="frontend-documentation-elements" id="bottom">
                     <legend>React JS</legend>
-                    <iframe src="https://devdocs.io/css/" frameborder="0"></iframe>
+                    <iframe src="https://devdocs.io/react/" frameborder="0"></iframe>
+                </fieldset>
+            </fieldset>
+            <div class="video-container">
+                <fieldset class="backend-fieldset">
+                    <legend>Backend Development</legend>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RLtyhwFtXQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/F5mRW0jo-U4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </fieldset>
+            </div>
+            <fieldset class="backend-documentation-container">
+                <legend>Backend Documentation</legend>
+                <fieldset class="backend-documentation-elements">
+                    <legend>Node JS</legend>
+                    <iframe src="https://devdocs.io/node/" frameborder="0" id="html"></iframe>
+                </fieldset>
+                <fieldset class="backend-documentation-elements">
+                    <legend>Django</legend>
+                    <iframe src="https://devdocs.io/django~4.0/" frameborder="0" id="css"></iframe>
                 </fieldset>
             </fieldset>
         </div>
-            <fieldset class="backend-fieldset">
-                <legend>Backend Development</legend>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/RLtyhwFtXQA?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/F5mRW0jo-U4?mode=opaque&amp;rel=0&amp;autohide=1&amp;showinfo=0&amp;wmode=transparent&amp;modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </fieldset>
-    </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+body {
+  background-image: url(../res/tecnologia.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-site {
+  z-index: 9999;
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: rgba(231, 250, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-site h1 {
+  margin-left: 10px;
+  color: #a5cc57;
+  font-size: 70px;
+  font-family: "Libre Barcode 128 Text", cursive;
+  text-shadow: -5px -1px 0 #000, 0px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  cursor: auto;
+}
+.navbar-links-container ul {
+  list-style: none;
+  display: flex;
+  margin-top: 5px;
+}
+.header-site li a {
+  text-decoration: none;
+  margin: 60px;
+  color: #07becc;
+  font-weight: bolder;
+  transition: all 0.3s ease 0s;
+}
+.header-site li a:hover {
+  color: #4d4d4d;
+}
+:is(.fa-home,.fa-users,.fa-id-badge){
+  margin-right: 5px;
+
+}
+.video-container{
+    width: 95%;
+    gap :30px;
+}
+:is(.frontend-fieldset,.backend-fieldset){
+    background-color: rgba(231, 250, 255,0.5);
+    padding: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #07becc;
+    border-radius: 30px;
+    border: 0.2cm solid black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+}
+:is(.frontend-fieldset,.backend-fieldset) iframe{
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%;
+    height: 450px;
+}
+.frontend-documentation-container{
+    position: relative;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #07becc;
+    width: 100%;
+    height: fit-content;
+    padding: 40px;
+    width: 95%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgba(231, 250, 255,0.5);
+    border: 0.2cm solid black;
+    border-radius :30px;
+}
+.frontend-documentation-elements{
+    border: 0.15cm solid black;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 30px;
+}
+.frontend-documentation-elements iframe{
+    width: 100%;
+    height: 100vh;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 0.5cm;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #a5cc57;
+    border-radius: 20px;
+    margin: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #07becc;
+    border-radius: 20px;
+    height: 100px;
+  }

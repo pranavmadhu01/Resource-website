@@ -6,6 +6,9 @@
     scroll-behavior: smooth;
     font-family: sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(../res/tecnologia.svg);
     background-size: cover;
@@ -16,12 +19,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 100px;
 }
 .header-site{
     padding-left: 10px;
     padding-right: 20px;
     z-index: 9999;
-    position: fixed;
     width: 100%;
     height: 100px;
     padding-top: 10px;
@@ -49,18 +52,13 @@ body{
 .header-site a:hover{
     color: #4d4d4d;
 }
-
+:is(.fa-home,.fa-users,.fa-id-badge){
+    margin-right: 5px;
+  
+  }
 .video-container{
     width: 95%;
-    margin-top: 2.6cm;
     gap :30px;
-    
-}
-iframe{
-    padding: 10px;
-    border-radius: 30px;
-    width: 100%;
-    height: 450px;
 }
 :is(.frontend-fieldset,.backend-fieldset){
     background-color: rgba(231, 250, 255,0.5);
@@ -74,9 +72,97 @@ iframe{
     grid-template-columns: 50% 50%;
     place-items: center;
 }
-.frontend-documentation{
-    background-color: rgba(231, 250, 255,0.5);
+:is(.frontend-fieldset,.backend-fieldset) iframe{
+    padding: 10px;
+    border-radius: 30px;
     width: 100%;
-    padding: 20px 50px;
-
+    height: 450px;
 }
+.frontend-documentation-container{
+    position: relative;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #07becc;
+    width: 100%;
+    height: fit-content;
+    padding: 40px;
+    width: 95%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgba(231, 250, 255,0.5);
+    border: 0.2cm solid black;
+    border-radius :30px;
+}
+.frontend-documentation-elements{
+    border: 0.15cm solid black;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 30px;
+}
+.frontend-documentation-elements iframe{
+    width: 100%;
+    height: 100vh;
+    border-radius: 30px;
+}
+.fa-angle-double-down{
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+    animation:  animation1 1s infinite alternate-reverse ;
+    transition: all 0.4s ease 0s;
+}
+@keyframes animation1{
+    to{transform: translateY(30px);}
+}
+.fa-angle-double-down:hover{
+    text-shadow: -5px -1px 0 #000, 0px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    animation-duration: 0s;
+}
+.backend-documentation-container{
+    position: relative;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #07becc;
+    width: 100%;
+    height: fit-content;
+    padding: 40px;
+    width: 95%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgba(231, 250, 255,0.5);
+    border: 0.2cm solid black;
+    border-radius :30px;
+}
+.backend-documentation-elements{
+    border: 0.15cm solid black;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 30px;
+}
+.backend-documentation-elements iframe{
+    width: 100%;
+    height: 100vh;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 0.5cm;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #a5cc57;
+    border-radius: 20px;
+    margin: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #07becc;
+    border-radius: 20px;
+    height: 100px;
+  }

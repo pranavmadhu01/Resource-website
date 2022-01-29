@@ -1,360 +1,564 @@
-@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
 }
-body{
-    background-image: url(../res/tecnologia.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body {
+  background-image: url(../res/tecnologia.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.main-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.header-site{
-    z-index: 9999;
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    background-color: rgba(231, 250, 255,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.header-site {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: rgba(231, 250, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.header-site h1{
-    margin-left: 10px;
-    color: #a5cc57;
-    font-size: 70px;
-    font-family: 'Libre Barcode 128 Text', cursive;
-    text-shadow: -5px -1px 0 #000, 0px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    cursor: auto;
+.header-site h1 {
+  margin-left: 10px;
+  color: #a5cc57;
+  font-size: 70px;
+  font-family: "Libre Barcode 128 Text", cursive;
+  text-shadow: -5px -1px 0 #000, 0px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  cursor: auto;
 }
-.navbar-links-container ul{
-    list-style: none;
-    display: flex;
-    margin-top: 5px;
+.navbar-links-container ul {
+  list-style: none;
+  display: flex;
+  margin-top: 5px;
 }
-.header-site li a{
-    text-decoration: none;
-    margin: 60px;
-    color: #07becc;
-    font-weight: bolder;
-    transition: all 0.3s ease 0s;
+.header-site li a {
+  text-decoration: none;
+  margin: 60px;
+  color: #07becc;
+  font-weight: bolder;
+  transition: all 0.3s ease 0s;
 }
-.header-site li a:hover{
-    color: #4d4d4d;
+.header-site li a:hover {
+  color: #4d4d4d;
 }
-.body-container{
-    padding-top: 2.6cm;
-    width: 900px;
-    height: 600px;
-    margin-top: 2.6cm;
-    border-radius: 40px;
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    gap :4px;
-    animation: animation1;
-    animation-duration: 3s;
-
-    
+:is(.fa-home,.fa-users,.fa-id-badge){
+  margin-right: 5px;
+}
+.grid-container {
+  padding-top: 2.6cm;
+  width: 900px;
+  height: 600px;
+  margin-top: 2.6cm;
+  border-radius: 40px;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  gap: 4px;
+  animation: animation1;
+  animation-duration: 3s;
 }
 @keyframes animation1 {
-    from{
-        transform:perspective(50em) rotateY(40deg);
-        
-    }
+  from {
+    transform: perspective(50em) rotateY(40deg);
+  }
 }
-.body-container a{
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    background-color:#4d4d4d;
-    text-decoration: none;
-    color: #000;
-    transition: all 0.5s ease 0s;
+.name-div{
+  display: none;
 }
-.git{
-    position: relative;
-    background-image: url(../res/git\ and\ github.jpg);
-    background-size: 300px 300px;
-    background-size: cover;
-    background-position: center;
-    border-bottom:0.02cm solid #4d4d4d ;
-    border-right: 0.02cm solid #4d4d4d;
-    animation: animation2;
-    animation-duration: 1s;
+.grid-container>div{
+  width: 100%;
+  height: 100%;
 }
-.git::after{
-    position: absolute;
-    background-color:rgba(231, 250, 255);
-    width:300px ;
-    height: 249px;
-    border-radius:20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 45px;
-    text-align: center;
-    content: " ";
-    opacity: 0;
-    transform: rotate(-20deg) scale(0.5);
-    
-    transition: all 0.5s ease 0s;
+.grid-container>a{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  background-color: #4d4d4d;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s ease 0s;
 }
-.git:hover::after{
-    content: "Git and Github";
-    background-color:rgba(231, 250, 255,0.75);
-    opacity: 1;
-    transform: rotate(0deg);
+.git {
+  position: relative;
+  background-image: url(../res/git\ and\ github.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: 0.02cm solid #4d4d4d;
+  border-right: 0.02cm solid #4d4d4d;
+  animation: animation2;
+  animation-duration: 1s;
 }
-.web{
-    background-image: url(../res/Web_Programmer_01_generated.jpg);
-    background-size: 300px 300px;
-    background-size: cover;
-    background-position: center;
-    border-left: 0.02cm solid #4d4d4d;
-    border-bottom:0.02cm solid #4d4d4d;
-    border-right: 0.02cm solid #4d4d4d;
-    animation: animation2;
-    animation-duration: 1s;
+.git::after {
+  position: absolute;
+  background-color: rgba(231, 250, 255);
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  content: " ";
+  opacity: 0;
+  transform: rotate(-20deg) scale(0.5);
+  transition: all 0.5s ease 0s;
 }
-.web::after{
-    position: absolute;
-    background-color:rgba(231, 250, 255);
-    width:300px ;
-    height: 249px;
-    border-radius:20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 45px;
-    text-align: center;
-    content: " ";
-    opacity: 0;
-    transform: rotate(20deg) scale(0.5);
-    transition: all 0.5s ease 0s;
+.git:hover::after {
+  content: "Git and Github";
+  background-color: rgba(231, 250, 255, 0.75);
+  opacity: 1;
+  transform: rotate(0deg);
 }
-.web:hover::after{
-    content: "Web Development";
-    background-color:rgba(231, 250, 255,0.75);
-    opacity: 1;
-    transform: rotate(0deg);
+.web {
+  position: relative;
+  background-image: url(../res/Web_Programmer_01_generated.jpg);
+  background-size: 300px 300px;
+  background-size: cover;
+  background-position: center;
+  border-left: 0.02cm solid #4d4d4d;
+  border-bottom: 0.02cm solid #4d4d4d;
+  border-right: 0.02cm solid #4d4d4d;
+  animation: animation2;
+  animation-duration: 1s;
 }
-
-.ai{
-    background-image: url(../res/Artificial\ Intelligence.jpg);
-    background-size: 300px 300px;
-    background-size: cover;
-    background-position: center;
-    border-left: 0.02cm solid #4d4d4d;
-    border-bottom:0.02cm solid #4d4d4d;
-    animation: animation2;
-    animation-duration: 1s;
+.web::after {
+  position: absolute;
+  background-color: rgba(231, 250, 255);
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  content: " ";
+  opacity: 0;
+  transform: rotate(20deg) scale(0.5);
+  transition: all 0.5s ease 0s;
 }
-.ai::after{
-    position: absolute;
-    background-color:rgba(231, 250, 255);
-    width:300px ;
-    height: 249px;
-    border-radius:20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 45px;
-    text-align: center;
-    content: " ";
-    opacity: 0;
-    transform: rotate(-20deg) scale(0.5);
-    transition: all 0.5s ease 0s;
+.web:hover::after {
+  content: "Web Development";
+  background-color: rgba(231, 250, 255, 0.75);
+  opacity: 1;
+  transform: rotate(0deg);
 }
-.ai:hover::after{
-    content: "AI and ML";
-    background-color:rgba(231, 250, 255,0.75);
-    opacity: 1;
-    transform: rotate(0deg);
+.ai {
+  position: relative;
+  background-image: url(../res/Artificial\ Intelligence.jpg);
+  background-size: 300px 300px;
+  background-size: cover;
+  background-position: center;
+  border-left: 0.02cm solid #4d4d4d;
+  border-bottom: 0.02cm solid #4d4d4d;
+  animation: animation2;
+  animation-duration: 1s;
 }
-.gate{
-    background-image: url(../res/gate.jpg);
-    background-size: cover;
-    background-position: center;
-    border-top:0.02cm solid #4d4d4d ;
-    border-right: 0.02cm solid #4d4d4d;
-    animation: animation2;
-    animation-duration: 1s;
+.ai::after {
+  position: absolute;
+  background-color: rgba(231, 250, 255);
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  content: " ";
+  opacity: 0;
+  transform: rotate(-20deg) scale(0.5);
+  transition: all 0.5s ease 0s;
 }
-.gate::after{
-    position: absolute;
-    background-color:rgba(231, 250, 255);
-    width:300px ;
-    height: 249px;
-    border-radius:20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 45px;
-    text-align: center;
-    content: " ";
-    opacity: 0;
-    transform: rotate(20deg) scale(0.5);
-    transition: all 0.5s ease 0s;
+.ai:hover::after {
+  content: "AI and ML";
+  background-color: rgba(231, 250, 255, 0.75);
+  opacity: 1;
+  transform: rotate(0deg);
 }
-.gate:hover::after{
-    content: "Gate";
-    background-color:rgba(231, 250, 255,0.75);
-    opacity: 1;
-    transform: rotate(0deg);
+.gate {
+  position: relative;
+  background-image: url(../res/gate.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top: 0.02cm solid #4d4d4d;
+  border-right: 0.02cm solid #4d4d4d;
+  animation: animation2;
+  animation-duration: 1s;
 }
-.python{
-    background-image: url(../res/programing\ languages.jpg);
-    background-size: 300px 300px;
-    background-size: cover;
-    background-position: center;
-    border-top:0.02cm solid #4d4d4d ;
-    border-right: 0.02cm solid #4d4d4d;
-    border-left:0.02cm solid #4d4d4d ;
-    animation: animation2;
-    animation-duration: 1s;
+.gate::after {
+  position: absolute;
+  background-color: rgba(231, 250, 255);
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  content: " ";
+  opacity: 0;
+  transform: rotate(20deg) scale(0.5);
+  transition: all 0.5s ease 0s;
 }
-.python::after{
-    position: absolute;
-    background-color:rgba(231, 250, 255);
-    width:300px ;
-    height: 249px;
-    border-radius:20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 45px;
-    text-align: center;
-    content: " ";
-    opacity: 0;
-    transform: rotate(-20deg) scale(0.5);
-    transition: all 0.5s ease 0s;
+.gate:hover::after {
+  content: "Gate";
+  background-color: rgba(231, 250, 255, 0.75);
+  opacity: 1;
+  transform: rotate(0deg);
 }
-.python:hover::after{
-    content: "Other Langs";
-    background-color:rgba(231, 250, 255,0.75);
-    opacity: 1;
-    transform: rotate(0deg);
+.python {
+  position: relative;
+  background-image: url(../res/programing\ languages.jpg);
+  background-size: 300px 300px;
+  background-size: cover;
+  background-position: center;
+  border-top: 0.02cm solid #4d4d4d;
+  border-right: 0.02cm solid #4d4d4d;
+  border-left: 0.02cm solid #4d4d4d;
+  animation: animation2;
+  animation-duration: 1s;
 }
-.mobile-app{
-    background-image: url(../res/android\ appp\ dev.jpg);
-    background-size: 300px 300px;
-    background-size: cover;
-    background-position: center;
-    border-top:0.02cm solid #4d4d4d;
-    border-left:0.02cm solid #4d4d4d;
-    animation: animation2;
-    animation-duration: 1s;
+.python::after {
+  position: absolute;
+  background-color: rgba(231, 250, 255);
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  content: " ";
+  opacity: 0;
+  transform: rotate(-20deg) scale(0.5);
+  transition: all 0.5s ease 0s;
 }
-.mobile-app::after{
-    position: absolute;
-    background-color:rgba(231, 250, 255);
-    width:300px ;
-    height: 249px;
-    border-radius:20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 45px;
-    text-align: center;
-    content: " ";
-    opacity: 0;
-    transform: rotate(20deg) scale(0.5);
-    transition: all 0.5s ease 0s;
+.python:hover::after {
+  content: "Other Langs";
+  background-color: rgba(231, 250, 255, 0.75);
+  opacity: 1;
+  transform: rotate(0deg);
 }
-.mobile-app:hover::after{
-    content: "Android Dev";
-    background-color:rgba(231, 250, 255,0.75);
-    opacity: 1;
-    transform: rotate(0deg);
+.mobile-app {
+  position: relative;
+  background-image: url(../res/android\ appp\ dev.jpg);
+  background-size: 300px 300px;
+  background-size: cover;
+  background-position: center;
+  border-top: 0.02cm solid #4d4d4d;
+  border-left: 0.02cm solid #4d4d4d;
+  animation: animation2;
+  animation-duration: 1s;
+}
+.mobile-app::after {
+  position: absolute;
+  background-color: rgba(231, 250, 255);
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  content: " ";
+  opacity: 0;
+  transform: rotate(20deg) scale(0.5);
+  transition: all 0.5s ease 0s;
+}
+.mobile-app:hover::after {
+  content: "Android Dev";
+  background-color: rgba(231, 250, 255, 0.75);
+  opacity: 1;
+  transform: rotate(0deg);
 }
 @keyframes animation2 {
-    from{
-        transform: rotate(-20deg);
-    }
+  from {
+    transform: rotate(-20deg);
+  }
 }
-.body-container > div:hover{
-    cursor: pointer;
-    -moz-box-shadow: 0 0 10px black;
-    -webkit-box-shadow: 0 0 10px black;
-    box-shadow: 0 0 10px black;
-    transform: scale(1.03);
+.grid-container > div:hover {
+  cursor: pointer;
+  -moz-box-shadow: 0 0 10px black;
+  -webkit-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
+  transform: scale(1.03);
 }
-.footer{
-    width: 100%;
-    height: 100vh;
-    padding-top: 2.5cm;
-    display: flex;
-    flex-direction: column;
+.footer {
+  width: 100%;
+  height: fit-content;
+  padding-top: 2.5cm;
+}
+.about-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.info-container {
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+  background-color: rgba(231, 250, 255, 0.8);
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
+}
+.info-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border: 0.1cm solid #4d4d4d;
+  border-radius: 40%;
+  transition: all 0.3s ease-in-out 0s;
+}
+.info-container img:hover {
+  transform: rotate(20deg);
+}
+.info-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Libre Barcode 128 Text", cursive;
+}
 
-}
-.about-container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-    
-.info-container{
-    padding: 10em 0em;
-    background-color: rgba(231, 250, 255,0.8);
-    padding-top: 40px;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    text-align: center;
-    
 
+.animated-footer{
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
 }
-.info-container img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    object-position: center;
-    border: 0.1cm solid #4d4d4d;
-    border-radius: 40%;
-    transition: all 0.3s ease-in-out 0s ;
-    
+.footer-animation-container{
+  position: absolute;
+  width: 400%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: footeranimation 10s infinite alternate;
+  animation-play-state: running;
 }
-.info-container img:hover{
-    transform:rotate(20deg);
+
+@keyframes footeranimation {
+  33.33%{transform: translateX(-25%);}
+  66.66%{transform: translatex(-50%);}
+  100%{transform: translateX(-75%);}
+
+  
 }
-.info-container div{
+.footer-animation-container div img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border: 0.1cm solid #4d4d4d;
+  border-radius: 40%;
+  
+}
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 0.5cm;
+  background: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: #a5cc57;
+  border-radius: 20px;
+  margin: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #07becc;
+  border-radius: 20px;
+  height: 100px;
+}
+@media all  and (max-width:1200px){
+  .header-site h1{
+    font-size: 65px;
+  }
+  .header-site li a{
+    margin: 40px;
+    font-size: 15px;
+  }
+  :is(.fa-home,.fa-users,.fa-id-badge){
+    margin-right: 3px;
+  }
+  .grid-container{
+    width: 850px;
+    height: 550px;
+    gap: 10px;
+  }
+  .grid-container a{
+    overflow: hidden;
+  }
+  .name-div{
+    position: absolute;
+    bottom: 0%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    font-family: 'Libre Barcode 128 Text', cursive;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(230, 230, 230,0.9);
+    color: #07becc;
+  }
+  .ai::after,.gate::after,.git::after,.web::after,.python::after,.mobile-app::after{
+    display: none;
+  }
+  .info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .info-container>div{
+    font-size: small;
+  }
+  @media all and (max-width:1000px){
+    .header-site h1{
+      font-size: 60px;
+    }
+    .header-site li a{
+      margin: 30px;
+    }
+    .grid-container{
+      grid-template-columns: 50% 50%;
+      height: auto;
+      padding: 100px;
+    }
+    .grid-container a{
+      width: 300px;
+      height: 250px;
+    }
+    .footer{
+      padding-top: 1cm;
+    }
+    .info-container img{
+      width: 150px;
+      height: 150px;
+    }
+    .info-container div h1{
+      font-size: 20px;
+    }
+  }
 }
-::-webkit-scrollbar{
-    width: 0.5cm;
-    background: transparent;
+@media all and (max-width:850px){
+  .header-site h1{
+    font-size: 45px;
+  }
+  .header-site li  a{
+    margin: 15px;
+    font-size: 13px;
+    font-weight: bolder;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 0.1cm solid #a5cc57;
+    padding: 3px;
+  }
+  .grid-container{
+    padding: 0px;
+    width: 100%;
+    place-items: center;
+    gap: 10px;
+  }
+  .grid-container a{
+    width: 280px;
+  }
+  .info-container img{
+    width: 125px;
+    height: 125px;
+  }
+  .info-container div h1{
+    font-size: 15px;
+  }
+  
 }
-::-webkit-scrollbar-track{
-    background-color: #a5cc57;
-    border-radius: 20px;
+@media all and (max-width:650px){
+  .header-site{
+    flex-direction: column;
+    height: fit-content;
+  }
+  .header-site h1{
+    font-size: 40px;
+  }
+  .header-site li a{
+    font-size: 15px;
+  }
+  .grid-container{
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-container a{
+    width: 80%;
+    background-position: center 25%;
+  }
+  .info-container{
+    display: none;
+    grid-template-columns: 50% 50%;
+  }
+  .animated-footer{
+    display: block;
+  }
+  .footer-animation-container div img{
+    width: 125px;
+    height: 125px;
+  }
+  
+  .footer-animation-container div h1{
+    font-size: 20px;
+  }
+  ::-webkit-scrollbar{
+    width: 0.5em;
+  }
+}
+@media all and (max-width:400px){
+  .header-site li a{
     margin: 10px;
+    font-size: small;
+  }
 }
-::-webkit-scrollbar-thumb{
-    background-color: #07becc;
-    border-radius: 20px;
-    height: 100px;
-}
-
-
-
-
-
-
-
