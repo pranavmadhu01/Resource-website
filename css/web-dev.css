@@ -224,7 +224,6 @@ section>span>a:hover ion-icon{
         display: flex;
         align-items: center;
         justify-content: center;
-        display: none;
     }
     section nav{
         height: fit-content;
@@ -301,14 +300,16 @@ section>span>a:hover ion-icon{
     }
     section>span{
         position: absolute;
-        top: 1%;
+        top: 7%;
         left: 1%;
+    }
+    section nav{
+        width: 90%;
     }
 }
 
 @media all and (max-width:650px){
     .header-site{
-      flex-direction: column;
       height: fit-content;
     }
     .header-site h1{
