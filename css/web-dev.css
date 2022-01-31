@@ -8,7 +8,7 @@
 }
 body {
   width: 100vw;
-  background-image: url(tecnologia.svg);
+  background-image: url(../res/tecnologia.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
