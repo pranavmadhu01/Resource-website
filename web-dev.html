@@ -1,66 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css/web-dev.css" />
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://kit.fontawesome.com/7838252b65.js" crossorigin="anonymous"></script>
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="main-container">
-            <header class="header-site">
-                <h1>Web Development</h1>
-                    <a href="index.html"><i class="fas fa-home"></i>Home</a>
-            </header>
-            <div class="video-container">
-                <fieldset class="frontend-fieldset">
-                    <legend>Frontend Development</legend>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yfoY53QXEnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/w7ejDZ8SWv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </fieldset>
-            </div>
-            <fieldset class="frontend-documentation-container">
-                <legend>Frontend Documentation</legend>
-                <span><a href="#bottom"><i class="fas fa-angle-double-down"></i></a></span>
-                <fieldset class="frontend-documentation-elements">
-                    <legend>Html</legend>
-                    <iframe src="https://devdocs.io/html/" frameborder="0" id="html"></iframe>
-                </fieldset>
-                <fieldset class="frontend-documentation-elements">
-                    <legend>Css</legend>
-                    <iframe src="https://devdocs.io/css/" frameborder="0" id="css"></iframe>
-                </fieldset>
-                <fieldset class="frontend-documentation-elements">
-                    <legend>JS</legend>
-                    <iframe src="https://devdocs.io/javascript/" frameborder="0"></iframe>
-                </fieldset>
-                <fieldset class="frontend-documentation-elements" id="bottom">
-                    <legend>React JS</legend>
-                    <iframe src="https://devdocs.io/react/" frameborder="0"></iframe>
-                </fieldset>
-            </fieldset>
-            <div class="video-container">
-                <fieldset class="backend-fieldset">
-                    <legend>Backend Development</legend>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RLtyhwFtXQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/F5mRW0jo-U4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </fieldset>
-            </div>
-            <fieldset class="backend-documentation-container">
-                <legend>Backend Documentation</legend>
-                <fieldset class="backend-documentation-elements">
-                    <legend>Node JS</legend>
-                    <iframe src="https://devdocs.io/node/" frameborder="0" id="html"></iframe>
-                </fieldset>
-                <fieldset class="backend-documentation-elements">
-                    <legend>Django</legend>
-                    <iframe src="https://devdocs.io/django~4.0/" frameborder="0" id="css"></iframe>
-                </fieldset>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wev-dev.css">
+    <script src="https://kit.fontawesome.com/7838252b65.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-site">
+        <h1>RESOURCES</h1>
+        <div class="navbar-links-container">
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="main" id="main">
+        <nav>
+            <ul>
+                <li><a href="#frontend">Frontend-dev</a></li>
+                <li><a href="#backend">Backend-dev</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="frontend" class="sub-one">
+        <span><a href="#main"><ion-icon name="grid-outline"></ion-icon>Main</a></span>
+        <nav>
+            <ul>
+                <li><a href="#html"><ion-icon name="logo-html5"></ion-icon>Html</a></li>
+                <li><a href="#css"><ion-icon name="logo-css3"></ion-icon>Css</a></li>
+                <li><a href="#js"><ion-icon name="logo-javascript"></ion-icon>Js</a></li>
+                <li><a href="#react"><ion-icon name="logo-react"></ion-icon>React Js</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="html">
+        <span><a href="#frontend"><ion-icon name="grid-outline"></ion-icon>Menu</a></span>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <fieldset>
+                <legend>Documentation</legend>
+                <iframe src="https://devdocs.io/html/" frameborder="0" id="html"></iframe>
             </fieldset>
         </div>
-    </body>
+    </section>
+    <section id="css">
+        <span><a href="#frontend"><ion-icon name="grid-outline"></ion-icon>Menu</a></span>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yfoY53QXEnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <fieldset>
+                <legend>Documentation</legend>
+                <iframe src="https://devdocs.io/css/" frameborder="0" id="css"></iframe>
+            </fieldset>
+        </div>
+    </section>
+    <section id="js">
+        <span><a href="#frontend"><ion-icon name="grid-outline"></ion-icon>Menu</a></span>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <fieldset>
+                <legend>Documentation</legend>
+                <iframe src="https://devdocs.io/javascript/" frameborder="0"></iframe>
+            </fieldset>
+        </div>
+    </section>
+    <section id="react">
+        <span><a href="#frontend"><ion-icon name="grid-outline"></ion-icon>Menu</a></span>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/w7ejDZ8SWv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <fieldset>
+                <legend>Documentation</legend>
+                <iframe src="https://devdocs.io/react/" frameborder="0"></iframe>
+            </fieldset>
+        </div>
+    </section>
+    <section id="backend" class="sub-two">
+        <span><a href="#main"><ion-icon name="grid-outline"></ion-icon>Main</a></span>
+        <nav>
+            <ul>
+                <li><a href="#node"><ion-icon name="logo-nodejs"></ion-icon>Node Js</a></li>
+                <li><a href="#django">Django</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="node">
+        <span><a href="#backend"><ion-icon name="grid-outline"></ion-icon>Menu</a></span>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/RLtyhwFtXQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <fieldset>
+                <legend>Documentation</legend>
+                <iframe src="https://devdocs.io/node/" frameborder="0" id="html"></iframe>
+            </fieldset>
+        </div>
+    </section>
+    <section id="django">
+        <span><a href="#backend"><ion-icon name="grid-outline"></ion-icon>Menu</a></span>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/F5mRW0jo-U4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <fieldset>
+                <legend>Documentation</legend>
+                <iframe src="https://devdocs.io/django~4.0/" frameborder="0" id="css"></iframe>
+            </fieldset>
+        </div>
+    </section>
+</body>
 </html>
