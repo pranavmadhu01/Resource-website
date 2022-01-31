@@ -72,10 +72,11 @@ section{
 }
 section:target{
     display: flex;
-    animation: animation1 0.4s  alternate;
+    animation: animation1 0.8s  forwards;
 }
 @keyframes animation1{
-    0%{transform: translateX(500px);}
+  from{transform: perspective(50em) rotateX(5deg);}
+  to{transform: perspective(50em) rotateX(0deg);}
 }
 section  nav{
     width: 100%;
@@ -253,7 +254,7 @@ section>span>a:hover ion-icon{
     }
     section>span{
         position: absolute;
-        top: 12%;
+        top: 14%;
         left: 1%;
     }
     section>span>a{
@@ -298,14 +299,10 @@ section>span>a:hover ion-icon{
         width: 600px;
         height: 550px;
     }
-    section>span{
-        position: absolute;
-        top: 7%;
-        left: 1%;
-    }
     section nav{
-        width: 90%;
+        width: 70%;
     }
+    
 }
 
 @media all and (max-width:650px){
@@ -329,6 +326,14 @@ section>span>a:hover ion-icon{
         width: 350px;
         height: 550px;
     }
+    section nav{
+      margin-top: 2cm;
+      width: 90%;
+  }
+  section>span>a{
+    padding: 10px;
+    
+}
 }
 
 @media all and (max-width:400px){

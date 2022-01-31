@@ -61,7 +61,7 @@ body {
     width: 90vw;
     height: 100vh;
     border-radius: 30px;
-    border: 0.2cm solid black;
+    border: 0.08cm solid #4d4d4d;
     padding: 30px;
 }
 
@@ -96,3 +96,69 @@ iframe{
     border-radius: 20px;
     height: 100px;
   }
+
+
+@media all and (max-width:1200px){
+  .header-site h1{
+      font-size: 65px;
+  }
+  .header-site li a{
+      margin: 40px;
+      font-size: 15px;
+  }
+}
+
+@media all and (max-width:1000px){
+  .header-site h1{
+    font-size: 60px;
+  }
+  .header-site li a{
+    margin: 30px;
+  }
+  .gate-fieldset{
+    padding: 20px;
+  }
+}
+
+@media all and (max-width:850px){
+  .header-site h1{
+    font-size: 45px;
+  }
+  .header-site  a{
+    font-size: 13px;
+    font-weight: bolder;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 0.1cm solid #a5cc57;
+    padding: 3px;
+  }
+  .gate-fieldset{
+    padding: 10px;
+  }
+}
+
+@media all and (max-width:650px){
+  .header-site{
+      height: fit-content;
+  }
+  .header-site h1{
+      font-size: 30px;
+  }
+  .header-site li a{
+      font-size: 15px;
+  }
+  .gate-fieldset{
+    padding: 0px;
+    width: 93vw;
+  }
+  ::-webkit-scrollbar{
+    width: 0.5em;
+  }
+}
+
+@media all and (max-width:400px){
+  .header-site{
+      flex-direction: column;
+      height: min-content;
+  }
+}
